@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- CSS de Bootstrap -->
+    <link href="lib/bootstrap.min.css" rel="stylesheet" media="screen">
+    <title>Aupanene</title>
+  </head>
+  <body>
+
+    <header class="row">
+        <div class="container-fluid">
+            <nav class="navbar navbar-default navbar-static-top">
+              <!-- En pantallas pequeñas, el logotipo y el icono que despliega el menú se agrupan-->
+              <div class="col-sm-2 col-md-4 navbar-header">
+                <button type="button" class="navbar-toggle navbar-right" data-toggle="collapse"
+                        data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Desplegar menú</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div id="logotipo" class="col-xs-6 col-sm-10 col-md-5">
+                  <img class="img-responsive" src="img/logotipo.jpg" alt="Logotipo Aupanene">
+                </div>
+              </div>
+
+              <!-- Agrupar los enlaces de navegación que se ocultan al minimizar la barra -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a id="informacion" href="#">Quiénes somos</a></li>
+                  <li><a id="agenda" href="#">Agenda de actividades</a></li>
+                  <li><a id="galeria" href="#">Galería multimedia</a></li>
+                  <li><a id="contacto" href="#">Contacta con nosotros</a></li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="container-fluid">
+            <main class="col-sm-12 col-md-9 col-md-push-3"></main>
+            <aside class="col-sm-12 col-md-3 col-md-pull-9">
+                <h2>Sitios de interés</h2>
+                <div class="list-group">
+                  <a href="http://blog.monitosyrisas.com/" class="list-group-item">De Monitos y Risas. Blog sobre porteo</a>
+                  <a href="https://www.indajani.com/" class="list-group-item">Indajani. Fulares tejidos a mano</a>
+                  <a href="https://www.wrapyouinlove.com/" class="list-group-item">Wrap you in love. Videotutoriales</a>
+                  <a href="http://redcanguro.org/" class="list-group-item">Asociación Red Canguro</a>
+                  <a href="https://www.miscanguritos.com/" class="list-group-item">Mis canguritos. Tienda especializada</a>
+                  <a href="http://www.pediatriaintegral.es/publicacion-2014-12/el-porteo-ergonomico/" class="list-group-item">
+                      Pediatría Integral. El porteo ergonómico</a>
+                  <a id="recursos" href="#" class="list-group-item active" data-toggle="modal" data-target="#detalle-recursos">Recursos técnicos</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="footer row">
+      <div class="container-fluid">
+        <p class="text-muted">Aquí va el sticky footer. Falta CSS para fijarlo al final de la ventana del navegador</p>
+      </div>
+    </footer>
+
+    <!-- Emergente en el que se detallan los recursos técnicos utilizados-->
+    <div id="detalle-recursos" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">RECURSOS TÉCNICOS</h4>
+              </div>
+              <div class="modal-body">
+                <p>Aquí irán detallados los recursos técnicos utilizados para crear este sitio</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    <!-- Todos los plugins JavaScript de Bootstrap-->
+    <script src="lib/bootstrap.min.js"></script>
+
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+       <script src="js/aupanene-principal.js"></script>
+  </body>
+</html>
+
