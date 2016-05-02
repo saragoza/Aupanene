@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -9,41 +7,60 @@
       <!-- CSS de Bootstrap -->
     <link href="lib/bootstrap.min.css" rel="stylesheet" media="screen">
     <title>Aupanene</title>
+    <style>
+        #logotipo{
+            padding: 0px;
+        }
+        #logotipo a{
+            padding: 0px;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        #logotipo a img{
+            padding: 0px;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        .navbar-ex1-collapse{
+            margin-right: 15px;
+        }
+    </style>
   </head>
   <body>
-
-    <header class="row">
-        <div class="container-fluid">
+      <div class="container-fluid">
+        <header class="row">
             <nav class="navbar navbar-default navbar-static-top">
               <!-- En pantallas pequeñas, el logotipo y el icono que despliega el menú se agrupan-->
               <div class="col-sm-2 col-md-4 navbar-header">
-                <button type="button" class="navbar-toggle navbar-right" data-toggle="collapse"
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
                         data-target=".navbar-ex1-collapse">
                   <span class="sr-only">Desplegar menú</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <div id="logotipo" class="col-xs-6 col-sm-10 col-md-5">
-                  <img class="img-responsive" src="img/logotipo.jpg" alt="Logotipo Aupanene">
+                <div id="logotipo" class="col-xs-6 col-sm-12 col-md-4 col-md-offset-2">
+                  <a class="navbar-brand" href="#">
+                      <img class="img-responsive" src="img/logotipo-xs.jpg" alt="Logotipo Aupanene">
+                  </a>
                 </div>
               </div>
 
               <!-- Agrupar los enlaces de navegación que se ocultan al minimizar la barra -->
-              <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a id="informacion" href="#">Quiénes somos</a></li>
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a id="informacion" href="#">Quiénes somos</a></li>
                   <li><a id="agenda" href="#">Agenda de actividades</a></li>
                   <li><a id="galeria" href="#">Galería multimedia</a></li>
                   <li><a id="contacto" href="#">Contacta con nosotros</a></li>
                 </ul>
               </div>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <div class="row">
-        <div class="container-fluid">
+        <div class="row">
             <main class="col-sm-12 col-md-9 col-md-push-3"></main>
             <aside class="col-sm-12 col-md-3 col-md-pull-9">
                 <h2>Sitios de interés</h2>
@@ -59,13 +76,11 @@
                 </div>
             </aside>
         </div>
-    </div>
 
-    <footer class="footer row">
-      <div class="container-fluid">
-        <p class="text-muted">Aquí va el sticky footer. Falta CSS para fijarlo al final de la ventana del navegador</p>
+        <footer class="footer row">
+            <p class="text-muted">Aquí va el sticky footer. Falta CSS para fijarlo al final de la ventana del navegador</p>
+        </footer>
       </div>
-    </footer>
 
     <!-- Emergente en el que se detallan los recursos técnicos utilizados-->
     <div id="detalle-recursos" class="modal fade" role="dialog">
@@ -94,7 +109,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-       <script src="js/aupanene-principal.js"></script>
+       <script src="js/aupanene-principal.min.js"></script>
   </body>
 </html>
 
